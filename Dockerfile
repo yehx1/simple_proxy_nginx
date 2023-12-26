@@ -11,11 +11,11 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # VOLUME nginx.conf /etc/nginx/nginx.conf
 ENV NGINX_VERSION 1.25.3
-EXPOSE 80/tcp
-EXPOSE 80/udp
+# EXPOSE 80/tcp
+# EXPOSE 80/udp
 EXPOSE 443/tcp
 EXPOSE 443/udp
-EXPOSE 22 80 443
+EXPOSE 443
 
 # RUN ["/bin/bash","-c","echo hello world"]
 CMD ["nginx", "-g", "daemon off;"]
