@@ -1,8 +1,8 @@
 FROM nginx:1.25.3
 LABEL describe="test image"
 RUN mkdir mkdir /root/project/nginx_config/cert/ -p
-COPY cert/server.pem root/project/nginx_config/cert/server.pem 
-COPY cert/private.key root/project/nginx_config/cert/private.key 
+COPY cert/server.crt root/project/nginx_config/cert/server.crtt 
+COPY cert/private0.key root/project/nginx_config/cert/private0.key 
 # COPY www /usr/share/nginx/html
 # docker build -t ng:v4 .
 # docker run -d -it -p 443:443 ng:v3 /bin/bash
