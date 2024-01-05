@@ -1,8 +1,8 @@
 # simple_proxy_nginx
-simple proxy for llms, openai, chatgpt, gemini, google, scholar, huggingface, …
+simple proxy for llms, openai, chatgpt, gemini, azure, google, scholar, huggingface, …
 
 git add .
-git commit -m "v1.2, 2024-01-03, update"
+git commit -m "v1.3, 2024-01-05, update"
 git push origin main
 
 # ToDo
