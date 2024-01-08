@@ -1,6 +1,10 @@
 services:
+	# https://docs.render.com/blueprint-spec
   - name: simple-proxy-nginx
     type: web
     env: docker
+		dockerfilePath: ./Dockerfile-render
     region: singapore
     plan: free
+		branch: main
+		healthCheckPath: /healthz
