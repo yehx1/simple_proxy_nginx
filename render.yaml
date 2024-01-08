@@ -1,5 +1,4 @@
 services:
-	# https://docs.render.com/blueprint-spec
   - name: simple-proxy-nginx
     type: web
     env: docker
@@ -8,3 +7,4 @@ services:
     plan: free
     branch: main
     healthCheckPath: /healthz
+    # https://docs.render.com/blueprint-spec
