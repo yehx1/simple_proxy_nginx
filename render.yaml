@@ -3,8 +3,8 @@ services:
   - name: simple-proxy-nginx
     type: web
     env: docker
-		dockerfilePath: ./Dockerfile-render
+    dockerfilePath: ./Dockerfile-render
     region: singapore
     plan: free
-		branch: main
-		healthCheckPath: /healthz
+    branch: main
+    healthCheckPath: /healthz
