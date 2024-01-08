@@ -1,0 +1,6 @@
+services:
+  - name: simple-proxy-nginx
+    type: web
+    env: docker
+    region: singapore
+    plan: free
