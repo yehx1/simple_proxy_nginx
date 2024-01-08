@@ -1,8 +1,8 @@
 FROM nginx:1.25.3
 LABEL describe="test image"
 RUN mkdir mkdir /root/project/nginx_config/cert/ -p
-RUN apt-get update && \
-    apt-get install -y nginx-extras
+# RUN apt-get update && \
+#     apt-get install -y nginx-extras
 COPY cert/server.crt root/project/nginx_config/cert/server.crt 
 COPY cert/private0.key root/project/nginx_config/cert/private0.key 
 # COPY www /usr/share/nginx/html
